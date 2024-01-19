@@ -1,8 +1,17 @@
+import { Route, Routes } from "react-router-dom"
+import Header from "./components/Header"
+import Home from "./pages/Home"
+import RecipeDetail from "./pages/RecipeDetail"
+
 const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className="container mx-auto">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/recipe/:id" element={<RecipeDetail />} />
+      </Routes>
+    </div>
   )
 }
 
