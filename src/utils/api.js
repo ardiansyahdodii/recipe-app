@@ -8,3 +8,9 @@ export const getPopularRecipe = async () => {
     // console.log(popularRecipe.data);
     return popularRecipe.data.recipes
 }
+
+export const getRecipesByType = async (type) => {
+    const recipesByType = await axios.get(`${apiUrl}complexSearch?number=20&type=${type}&apiKey=${apiKey}`)
+    // console.log(recipesByType.data.results);
+    return recipesByType.data.results
+}

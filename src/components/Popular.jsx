@@ -13,7 +13,7 @@ const Popular = () => {
             })
     }, [])
 
-    console.log(popularRecipe);
+    // console.log(popularRecipe);
     return (
         <div className="mt-10 p-2">
             <h1 className="text-2xl font-bold">Popular Recipe</h1>
