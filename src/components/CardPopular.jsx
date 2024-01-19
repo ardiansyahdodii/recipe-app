@@ -13,7 +13,7 @@ const CardPopular = (props) => {
                 </div>
             </div>
             <div className="absolute top-2 left-2 bg-amber-500 rounded-md px-1">
-                ⭐ {Math.round(props.score)}
+                ⭐{props.score.toFixed(1)}
             </div>
         </div>
     )
