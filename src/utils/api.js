@@ -14,3 +14,9 @@ export const getRecipesByType = async (type) => {
     // console.log(recipesByType.data.results);
     return recipesByType.data.results
 }
+
+export const getRecipeByName = async (type) => {
+    const recipesByType = await axios.get(`${apiUrl}complexSearch?query=${type}&apiKey=${apiKey}`)
+    // console.log(recipesByType.data.results);
+    return recipesByType.data.results
+}

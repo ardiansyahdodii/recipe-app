@@ -1,16 +1,17 @@
 import { useContext, useState } from "react"
 import { searchContext } from "../Context/SearchContext"
+import { useNavigate } from "react-router-dom"
 
 const SearchRecipe = () => {
     const [valueSearch, setValueSearch] = useState("")
     const {setSearchType} = useContext(searchContext)
+    const navigate = useNavigate()
 
     const handleSubmitSearch = (e) => {
         e.preventDefault()
         setSearchType(valueSearch)
+        navigate(`/search/${valueSearch}`)
     }
-
-    // console.log(searchType);
     return (
         <div className="flex justify-center mt-5">
             <form onSubmit={handleSubmitSearch} className="space-x-4">
