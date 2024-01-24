@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom"
+
 const CardPopular = (props) => {
     return (
-        <div className="shadow-md rounded-md relative border-black border-2">
+        <Link
+            to={`/recipe/${props.id}`}
+            className="shadow-md rounded-md relative border-black border-2"
+        >
             <img src={props.image} alt="" className="rounded-t-md object-cover" />
             <div className="min-h-[130px] p-2">
                 <h1 className="text-lg font-medium">{props.title}</h1>
@@ -15,7 +20,7 @@ const CardPopular = (props) => {
             <div className="absolute top-2 left-2 bg-amber-500 rounded-md px-1">
                 ⭐{props.score.toFixed(1)}
             </div>
-        </div>
+        </Link>
     )
 }
 

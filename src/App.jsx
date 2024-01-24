@@ -4,6 +4,7 @@ import SearchRecipe from "./components/SearchRecipe"
 import Home from "./pages/Home"
 import RecipeDetail from "./pages/RecipeDetail"
 import SearchPage from "./pages/SearchPage"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/recipe/:id" element={<RecipeDetail />} />
         <Route path="/search/:query" element={<SearchPage />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

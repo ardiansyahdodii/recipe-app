@@ -24,7 +24,7 @@ const Popular = () => {
             >
                 {popularRecipe.map((recipe) => (
                     <SwiperSlide key={recipe.id}>
-                        <CardPopular title={recipe.title} image={recipe.image} ready={recipe.readyInMinutes} score={recipe.spoonacularScore} type={recipe.dishTypes[0]} like={recipe.aggregateLikes}/>
+                        <CardPopular id={recipe.id} title={recipe.title} image={recipe.image} ready={recipe.readyInMinutes} score={recipe.spoonacularScore} type={recipe.dishTypes[0]} like={recipe.aggregateLikes}/>
                     </SwiperSlide>
                 ))}
             </Swiper>

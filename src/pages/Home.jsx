@@ -1,5 +1,4 @@
 import Category from "../components/Category"
-import Footer from "../components/Footer"
 import Popular from "../components/Popular"
 
 const Home = () => {
@@ -7,7 +6,6 @@ const Home = () => {
         <div className="p-3">
             <Popular />
             <Category />
-            <Footer />
         </div>
     )
 }

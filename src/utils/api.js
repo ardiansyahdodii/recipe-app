@@ -16,7 +16,13 @@ export const getRecipesByType = async (type) => {
 }
 
 export const getRecipeByName = async (type) => {
-    const recipesByType = await axios.get(`${apiUrl}complexSearch?query=${type}&apiKey=${apiKey}`)
+    const recipesByType = await axios.get(`${apiUrl}complexSearch?number=20&query=${type}&apiKey=${apiKey}`)
     // console.log(recipesByType.data.results);
     return recipesByType.data.results
+}
+
+export const getDetailRecipe = async (id) => {
+    const detailRecipe = await axios.get(`${apiUrl}${id}/information?apiKey=${apiKey}`)
+    // console.log(detailRecipe.data);
+    return detailRecipe.data
 }
