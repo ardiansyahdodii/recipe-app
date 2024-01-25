@@ -34,7 +34,7 @@ const Category = () => {
                 {type.map((item) => (
                     <div
                         key={item.title}
-                        className={`${typeActive === item.value && "bg-slate-500"} flex justify-center items-center text-lg font-medium px-3 h-8 bg-slate-300 rounded-lg cursor-pointer`}
+                        className={`${typeActive === item.value && "bg-slate-500"} flex justify-center items-center text-lg font-medium px-3 h-8 bg-slate-300 rounded-lg cursor-pointer hover:text-white hover:bg-slate-700`}
                         onClick={() => setTypeActive(item.value)}
                     >
                         {item.title}
