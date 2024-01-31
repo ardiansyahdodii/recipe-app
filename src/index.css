@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .mySwiper .swiper-button-prev {
+    background-size: 10px 10px;
+    color: black;
+    background-color: white;
+    width: 20px;
+} */
+
+/* .mySwiper .swiper-button-next {
+    color: black;
+    background-color: white;
+    width: 20px;
+} */
+
